@@ -1,24 +1,83 @@
-# README
+# BUS BOOKING
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Bus_booking is a webite that allow client to book a bus specifying the number of seats and the exact date and time of. any operator can register his agence but you will be oblige tobe registered througth your identity. It also have the admin dahsboard . This API is made these models:
 
-Things you may want to cover:
+  - Admin Model
+  - Role Model
+  - User Model
+  - Agence Model
+  - Bus Model
+  - Seats Model
+  - Payment Model
+  - Search model
 
-* Ruby version
+### Deployment
+[Heroku]()
+## Built With
 
-* System dependencies
+- Rails
+- Ruby 
+- Postgresql
+- Devise
+- JWT
+- ActiveRecord Serializer
+- ActiveAdmin
+- ActiveRecord Image Uploader
+- Cloudinary
+- Heroku
 
-* Configuration
+## Getting Started
 
-* Database creation
+Here are the steps to follow in order to get this project on your local computer.
 
-* Database initialization
+### Prerequisites
 
-* How to run the test suite
+`rails v7.0.2 +`
 
-* Services (job queues, cache servers, search engines, etc.)
+`ruby v3.0.2 +`
 
-* Deployment instructions
+### Setup
 
-* ...
+clone this repo by typing `git clone https://github.com/vic778/Jumia-API`
+
+### Install
+
+install the dependencies by typing `bundle install`
+
+### Usage
+
+start the local server by running `rails s`
+
+### Testing
+
+run the tests by typing `bundle exec rspec`
+
+
+### Documentation
+
+
+## Author
+
+👤 **Victor Barh**
+
+- GitHub: [@Vvic778](https://github.com/vic778)
+- Twitter: [@victoirBarh](https://twitter.com/)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/victoir-barh)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+ N/A
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed.
