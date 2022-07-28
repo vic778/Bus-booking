@@ -1,0 +1,30 @@
+
+<%= form_with model: @agence do |form| %>
+  <div class="field flex flex-col w-1/6 my-1">
+    <%= form.label :name, class: "font-bold" %>
+    <%= form.text_field :name %>
+  </div>
+
+   <div class="field flex flex-col w-1/2 my-2">
+    <%= form.label :register_number, class: "font-bold" %>
+    <%= form.text_field :register_number %>
+  </div>
+
+    <div class="field flex flex-col w-1/2 my-2">
+    <%= form.label :road, class: "font-bold" %>
+    <%= form.text_field :road %>
+  </div>
+
+  <div class="field flex flex-col w-1/2 my-2">
+    <%= form.label :avenue, class: "font-bold" %>
+    <%= form.text_field :avenue %>
+  </div>
+
+     <br/>
+
+  <div class="field flex flex-col w-1/2 my-2">
+    <%= form.submit%>
+  </div>
+
+<% end %>
+

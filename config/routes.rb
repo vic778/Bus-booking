@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   devise_for :users
   
   get 'user/auto_login', to: 'users#auto_login'
+  resources :agences
  
 end

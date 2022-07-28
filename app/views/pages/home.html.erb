@@ -1,2 +1,31 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>Welcom to Bus Booking</h1>
+
+
+
+
+<table>
+  <thead>
+     <tr>
+        <th>bus_name &emsp;</th>
+        <th>boarding&emsp;</th>
+        <th>destination&emsp;</th>
+        <th>No of Seats&emsp;</th> 
+        
+         <th>Time&emsp;</th>
+        <th>Action</th> 
+     </tr>
+
+  </thead>
+    <tbody>
+        <% @agences.each do |agence| %>
+            <tr>
+                <td><%= agence.name %></td>
+                
+              
+            </tr>
+        <% end %>
+    <tbody>
+</table>
+
+
+
