@@ -1,0 +1,24 @@
+
+<table>
+  <thead>
+     <tr>
+        <th>agence_name &emsp;</th>
+        <th>registration_number&emsp;</th>
+        <th>road&emsp;</th>
+        <th>avenue&emsp;</th> 
+        <th>phone&emsp;</th>
+     </tr>
+  </thead>
+    <tbody>
+        <% @agence.each do |agence| %>
+            <tr>
+                <td><%= link_to agence.name, agence_path(agence) %></td>
+                <td><%= agence.register_number %></td>
+                <td><%= agence.road %></td>
+                <td><%= agence.avenue %></td>
+                <td><%= agence.contact %></td>
+                 
+            </tr>
+        <% end %>
+    <tbody>
+</table>

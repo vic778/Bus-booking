@@ -1,0 +1,24 @@
+<h1 class="title is-2"><%= @agence.name %></h1>
+
+<section class="section instrument-show">
+  <div class="columns">
+    <div class="column is-8">
+      
+      <ul class="pv1">
+        <% if @agence.register_number? %>
+        <li class="inline-block pr3"><%= @agence.register_number %></li>
+        <% end %>
+
+        <li class="inline-block pr3"><%= @agence.road %></li>
+
+        <li class="inline-block pr3"><%= @agence.avenue %></li>
+     
+      </ul>
+    </div>
+ </div>
+</section>
+
+    <br/>
+    <br/>
+
+<%= link_to 'Edit', edit_agence_path(@agence) %>
