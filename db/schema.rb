@@ -42,7 +42,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_28_092121) do
 
   create_table "agences", force: :cascade do |t|
     t.string "name"
-    t.integer "register_number"
+    t.string "register_number"
     t.string "road"
     t.string "avenue"
     t.string "contact"
