@@ -6,6 +6,7 @@ class CreateAgences < ActiveRecord::Migration[7.0]
       t.string :road
       t.string :avenue
       t.string :contact
+      t.references :user, null: false, foreign_key: true
 
       t.timestamps
     end
