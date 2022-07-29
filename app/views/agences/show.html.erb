@@ -18,6 +18,35 @@
  </div>
 </section>
 
+<table>
+  <thead>
+     <tr>
+        <th>bus_name &emsp;</th>
+        <th>model &emsp;</th>
+        <th>boarding&emsp;</th>
+        <th>destination&emsp;</th>
+        <th>No of Seats&emsp;</th> 
+        
+         <th>Time&emsp;</th>
+        <th>Action</th> 
+     </tr>
+
+  </thead>
+    <tbody>
+        <% @buses.each do |bus| %>
+            <tr>
+                <td><%= bus.name %></td>
+                <td><%= bus.model %></td>
+                <td><%= bus.boarding %></td>
+                <td><%= bus.destination %></td>
+                <td><%= bus.no_of_seats %></td>
+                
+              
+            </tr>
+        <% end %>
+    <tbody>
+</table>
+
     <br/>
     <br/>
 
