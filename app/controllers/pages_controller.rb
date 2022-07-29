@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
   def home
-    @agences = Agence.all
+    @buses = Bus.all
   end
 end
