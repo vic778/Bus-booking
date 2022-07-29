@@ -15,7 +15,7 @@ FactoryBot.define do
     avenue { "MyString" }
   end
 
-    factory :bus do
+  factory :bus do
     name { "MyString" }
     model { "MyString" }
     boarding { "MyString" }
