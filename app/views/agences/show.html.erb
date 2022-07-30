@@ -30,15 +30,18 @@
      </tr>
   </thead>
     <tbody>
-        <% @buses.each do |bus| %>
-            <tr>
-                <td><%= bus.name %></td>
-                <td><%= bus.model %></td>
-                <td><%= bus.boarding %></td>
-                <td><%= bus.destination %></td>
-                <td><%= bus.no_of_seats %></td>                
-            </tr>
-        <% end %>
+    
+          <% @buses.each do |bus| %>
+              <tr>
+                  <td><%= bus.name %></td>
+                  <td><%= bus.model %></td>
+                  <td><%= bus.boarding %></td>
+                  <td><%= bus.destination %></td>
+                  <td><%= bus.no_of_seats %></td>  
+                  <td><%= bus.time %></td>
+              </tr>
+          <% end %>
+     
     <tbody>
 </table>
 
@@ -46,3 +49,5 @@
     <br/>
 
 <%= link_to 'Edit', edit_agence_path(@agence) %>
+
+<%= link_to 'Create bus', agence_new_bus_path(@agence), method: :post %>
