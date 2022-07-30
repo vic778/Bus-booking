@@ -1,0 +1,41 @@
+
+<%= form_with model: @bus do |form| %>
+  <div class="field flex flex-col w-1/6 my-1">
+    <%= form.label :name, class: "font-bold" %>
+    <%= form.text_field :name %>
+  </div>
+
+   <div class="field flex flex-col w-1/2 my-2">
+    <%= form.label :model, class: "font-bold" %>
+    <%= form.text_field :model %>
+  </div>
+
+  <div class="field flex flex-col w-1/2 my-2">
+    <%= form.label :boarding, class: "font-bold" %>
+    <%= form.text_field :boarding %>
+  </div>
+
+   <div class="field flex flex-col w-1/2 my-2">
+    <%= form.label :destination, class: "font-bold" %>
+    <%= form.text_field :destination %>
+  </div>
+
+   <div class="field flex flex-col w-1/2 my-2">
+    <%= form.label :no_of_seats, class: "font-bold" %>
+    <%= form.text_field :no_of_seats %>
+  </div>
+
+  <div class="field flex flex-col w-1/2 my-2">
+    <%= form.label :time, class: "font-bold" %>
+    <%= form.text_field :time %>
+  </div>
+
+  
+     <br/>
+
+  <div class="field flex flex-col w-1/2 my-2">
+    <%= form.submit%>
+  </div>
+
+<% end %>
+

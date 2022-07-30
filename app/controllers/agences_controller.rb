@@ -1,13 +1,15 @@
 class AgencesController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_agence, only: %i[show edit update destroy]
+  before_action :set_agence, only: %i[edit update destroy]
 
   def index
     @user = current_user
     @agence = @user.agences.all
   end
 
-  def show; end
+  def show
+    @agence = ge_buses
+  end
 
   def new
     @agence = Agence.new
@@ -38,6 +40,13 @@ class AgencesController < ApplicationController
   end
 
   private
+
+  # get all buses of an agence
+  def ge_buses
+    @user = Agence.where(user_id: current_user.id)
+    @buses = Bus.where(agence_id: @user)
+    @agence = Agence.find(params[:id])
+  end
 
   def set_agence
     @agence = Agence.find(params[:id])

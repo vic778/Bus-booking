@@ -14,4 +14,13 @@ FactoryBot.define do
     road { "MyString" }
     avenue { "MyString" }
   end
+
+  factory :bus do
+    name { "MyString" }
+    model { "MyString" }
+    boarding { "MyString" }
+    destination { "MyString" }
+    no_of_seats { "MyString" }
+    agence { nil }
+  end
 end
