@@ -4,7 +4,7 @@ ActiveAdmin.register Bus do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  permit_params :name, :model, :boarding, :destination, :no_of_seats, :agence_id
+  permit_params :name, :model, :boarding, :destination, :no_of_seats, :time, :agence_id
   #
   # or
   #
