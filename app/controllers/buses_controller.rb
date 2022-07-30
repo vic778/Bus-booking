@@ -2,6 +2,10 @@ class BusesController < ApplicationController
     before_action :authenticate_user!
     before_action :set_bus, only: [:show, :edit, :update, :destroy]
 
+    def new
+        @bus = Bus.new
+    end
+
     def create
         @bus = Bus.create(bus_params.merge(agence_id: current_user.agence.id))
         if @bus.save
@@ -31,7 +35,6 @@ class BusesController < ApplicationController
     end
 
     def bus_params
-        params.require(:bus).permit(:name, :register_number, :road, :avenue, :contact, :agence_id)
+        params.require(:bus).permit(:name, :model, :boarding, :destination, :no_of_seats, :time)
     end
-    
 end
