@@ -8,7 +8,7 @@ class AgencesController < ApplicationController
   end
 
   def show
-    @agence = get_buses
+    @agence = ge_buses
   end
 
   def new
@@ -42,10 +42,10 @@ class AgencesController < ApplicationController
   private
 
   # get all buses of an agence
-  def get_buses
-      @user = Agence.where(user_id: current_user.id)
-      @buses = Bus.where(agence_id: @user)
-      @agence = Agence.find(params[:id])
+  def ge_buses
+    @user = Agence.where(user_id: current_user.id)
+    @buses = Bus.where(agence_id: @user)
+    @agence = Agence.find(params[:id])
   end
 
   def set_agence
