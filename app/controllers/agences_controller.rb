@@ -43,9 +43,9 @@ class AgencesController < ApplicationController
 
   # get all buses of an agence
   def get_buses
-    @user = Agence.where(user_id: current_user.id)
-    @buses = Bus.where(agence_id: @user)
-    @agence = Agence.find(params[:id])
+      @user = Agence.where(user_id: current_user.id)
+      @buses = Bus.where(agence_id: @user)
+      @agence = Agence.find(params[:id])
   end
 
   def set_agence
