@@ -2,8 +2,7 @@
 
 <section class="section instrument-show">
   <div class="columns">
-    <div class="column is-8">
-      
+    <div class="column is-8">     
       <ul class="pv1">
         <% if @agence.register_number? %>
         <li class="inline-block pr3"><%= @agence.register_number %></li>
@@ -11,8 +10,7 @@
 
         <li class="inline-block pr3"><%= @agence.road %></li>
 
-        <li class="inline-block pr3"><%= @agence.avenue %></li>
-     
+        <li class="inline-block pr3"><%= @agence.avenue %></li>    
       </ul>
     </div>
  </div>
@@ -30,7 +28,6 @@
          <th>Time&emsp;</th>
         <th>Action</th> 
      </tr>
-
   </thead>
     <tbody>
         <% @buses.each do |bus| %>
@@ -39,9 +36,7 @@
                 <td><%= bus.model %></td>
                 <td><%= bus.boarding %></td>
                 <td><%= bus.destination %></td>
-                <td><%= bus.no_of_seats %></td>
-                
-              
+                <td><%= bus.no_of_seats %></td>                
             </tr>
         <% end %>
     <tbody>
