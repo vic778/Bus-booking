@@ -33,7 +33,7 @@
     
           <% @buses.each do |bus| %>
               <tr>
-                  <td><%= bus.name %></td>
+                  <td><%=link_to bus.name, bus %></td>
                   <td><%= bus.model %></td>
                   <td><%= bus.boarding %></td>
                   <td><%= bus.destination %></td>
@@ -50,4 +50,4 @@
 
 <%= link_to 'Edit', edit_agence_path(@agence) %>
 
-<%= link_to 'Create bus', agence_new_bus_path(@agence), method: :post %>
+<%= link_to 'Create bus', new_bus_path %>

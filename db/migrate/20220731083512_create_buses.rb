@@ -6,6 +6,8 @@ class CreateBuses < ActiveRecord::Migration[7.0]
       t.string :boarding
       t.string :destination
       t.string :no_of_seats
+      t.string :time
+      t.string :date
       t.references :agence, null: false, foreign_key: true
 
       t.timestamps

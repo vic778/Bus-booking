@@ -21,6 +21,8 @@ FactoryBot.define do
     boarding { "MyString" }
     destination { "MyString" }
     no_of_seats { "MyString" }
+    time { "MyString" }
+    date { "MyString" }
     agence { nil }
   end
 end
