@@ -1,0 +1,27 @@
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+   <%= link_to 'Booking', root_path, class: 'navbar-brand' %>
+
+   <% if user_signed_in? %>
+      <li class="nav-item">
+        <%= link_to 'Sign Out', destroy_user_session_path, class: "nav-link", data: { turbo_method: :delete } %></li>
+      </li>
+         <li class="nav-item">
+        <%= link_to 'edit', edit_user_registration_path, class: "nav-link" %>
+      </li>
+
+      <li class="nav-item">
+        <%= link_to 'My agences', agences_path, class: "nav-link" %>
+
+    <% else %>
+      <li class="nav-item">
+        <%= link_to 'Sign In', new_user_session_path, class: "nav-link" %>
+      </li>
+    <% end %>
+      <li class="nav-item">
+        <%= link_to 'sign up', new_user_registration_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Create agence', new_agence_path, class: "nav-link" %>
+      </li>
+</ul>

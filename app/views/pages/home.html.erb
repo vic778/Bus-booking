@@ -1,0 +1,38 @@
+<h1>Welcom to Bus Booking</h1>
+
+
+
+
+<table>
+  <thead>
+     <tr>
+        <th>bus_name &emsp;</th>
+        <th>model &emsp;</th>
+        <th>agence &emsp;</th>
+        <th>boarding&emsp;</th>
+        <th>destination&emsp;</th>
+        <th>No of Seats&emsp;</th> 
+        
+         <th>Time&emsp;</th>
+        <th>Action</th> 
+     </tr>
+
+  </thead>
+    <tbody>
+        <% @buses.each do |bus| %>
+            <tr>
+                <td><%= bus.name %></td>
+                <td><%= bus.model %></td>
+                <td><%= bus.agence.name %></td>
+                <td><%= bus.boarding %></td>
+                <td><%= bus.destination %></td>
+                <td><%= bus.no_of_seats %></td>
+                <td><%= bus.time %></td>
+              
+            </tr>
+        <% end %>
+    <tbody>
+</table>
+
+
+

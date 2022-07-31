@@ -1,0 +1,22 @@
+
+<%= simple_form_for(@bus) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :model %>
+    <%= f.input :boarding %>
+    <%= f.input :destination %>
+    <%= f.input :no_of_seats %>
+    <%= f.input :time %>
+    <%= f.input :date %>
+   
+    <%= f.association :agence%>
+  
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
