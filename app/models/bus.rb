@@ -7,4 +7,5 @@ class Bus < ApplicationRecord
   validates :destination, presence: true
   validates :no_of_seats, presence: true
   validates :time, presence: true
+  # validates :date, presence: true
 end
