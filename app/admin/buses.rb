@@ -4,12 +4,12 @@ ActiveAdmin.register Bus do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  permit_params :name, :model, :boarding, :destination, :no_of_seats, :time, :agence_id
+  permit_params :name, :model, :boarding, :destination, :no_of_seats, :time, :date, :agence_id
   #
   # or
   #
   # permit_params do
-  #   permitted = [:name, :model, :boarding, :destination, :no_of_seats, :agence_id]
+  #   permitted = [:name, :model, :boarding, :destination, :no_of_seats, :time, :date, :agence_id]
   #   permitted << :other if params[:action] == 'create' && current_user.admin?
   #   permitted
   # end

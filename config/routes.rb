@@ -5,9 +5,7 @@ Rails.application.routes.draw do
   devise_for :users
   
   get 'user/auto_login', to: 'users#auto_login'
-  resources :agences do
-    resources :buses
-    # post "/buses/new", to: "buses#create", as: :new
-  end
-  
+  resources :agences 
+  resources :buses
+
 end
